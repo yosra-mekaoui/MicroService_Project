@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8084
+ADD target/Event-Management-0.0.1-SNAPSHOT.jar Event.jar
+ENTRYPOINT ["java", "-jar" ,"Event.jar"]
